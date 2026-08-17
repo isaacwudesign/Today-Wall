@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/0c84e124-6061-4a4c-8b2d-2c6d53b533c6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f33d44a1-9ec4-4281-ac0f-a89d9861cbcb
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f33d44a1-9ec4-4281-ac0f-a89d9861cbcb
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ef69c10d-d417-4fca-81ea-b87dd9998490
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ef69c10d-d417-4fca-81ea-b87dd9998490>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 40b9aca0-acac-415e-af79-4fec5e45c5f7
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    doneVolume: false
+    dropVolume: false
+    pickupVolume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - pickupVolume: 0.450000
+      dropVolume: 0.500000
+      doneVolume: 0.550000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaydeskAudio – quiet grab/drop cues</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float pickupVolume = 0.45 {"hint":"Pickup volume (0–1)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float dropVolume = 0.5 {"hint":"Drop volume (0–1)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float doneVolume = 0.55 {"hint":"Done-tray settle volume (0–1)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @ui {"widget":"group_end"}'

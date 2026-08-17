@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/d916d72d-b104-46f8-aecd-b071daae8f83>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 34966513-a650-49ed-8a94-33bcd5f8b127
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 34966513-a650-49ed-8a94-33bcd5f8b127
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ef91febf-b9a1-4d29-852c-01de8c8efa20
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ef91febf-b9a1-4d29-852c-01de8c8efa20>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e853f87f-c680-43c6-9989-d4ec6f437534
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    addUI: false
+    audio: false
+    board: false
+    boardUI: false
+    debugColliders: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - board: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      boardUI: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      addUI: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaywallMain – orchestrates wall board</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 board {"hint":"Board controller (pin + cards)"}'
+    - '// @input AssignableType_2 boardUI {"hint":"See-through column UI"}'
+    - '// @input AssignableType_3 addUI {"hint":"Add-task UI"}'
+    - '// @input AssignableType_4 audio {"hint":"Audio cues"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input bool debugColliders {"hint":"Draw collider wireframes for cards"}'
+    - '// @ui {"widget":"group_end"}'

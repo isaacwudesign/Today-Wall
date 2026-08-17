@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/dd08a568-cf2a-488f-8afd-466ba841fef9>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c52b2010-52d8-40ee-ba07-885701534305
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c52b2010-52d8-40ee-ba07-885701534305
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 7c3ed88a-afbc-4c06-b163-09c94ec198b7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/7c3ed88a-afbc-4c06-b163-09c94ec198b7>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 25dfffe7-7b5d-4343-b230-f4ff81548e1a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    addLabel: false
+    heightCm: false
+    placeholderLabel: false
+    titleInk: false
+    widthCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - widthCm: !<float> 20.000000
+      heightCm: !<float> 7.000000
+      addLabel: Add
+      placeholderLabel: New task
+      titleInk: !<Vec4> {x: 0.120000, y: 0.100000, z: 0.080000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaydeskAddUI – add a card</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float widthCm = 20 {"hint":"Panel width in cm", "widget":"slider", "min":12, "max":28, "step":0.5}'
+    - '// @input float heightCm = 7 {"hint":"Panel height in cm", "widget":"slider", "min":5, "max":14, "step":0.5}'
+    - '// @input string addLabel = "Add" {"hint":"Add button label"}'
+    - '// @input string placeholderLabel = "New task" {"hint":"Placeholder shown in the title field"}'
+    - '// @input vec4 titleInk = "{0.12, 0.1, 0.08, 1}" {"hint":"Ink color for card titles", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

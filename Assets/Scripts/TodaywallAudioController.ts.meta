@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/5952ddb8-01a1-41ab-aaec-2fa1778182aa>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0eac5509-9a6d-4404-ba45-3685b13cbbb7
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0eac5509-9a6d-4404-ba45-3685b13cbbb7
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1b37c8bc-d0d6-4dac-9647-37318a1b28aa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1b37c8bc-d0d6-4dac-9647-37318a1b28aa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 473c7399-b710-420c-a774-eec6c9381f8e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    doneVolume: false
+    dropVolume: false
+    pickupVolume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - pickupVolume: 0.400000
+      dropVolume: 0.450000
+      doneVolume: 0.500000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaywallAudio – quiet grab/drop cues</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float pickupVolume = 0.4 {"hint":"Pickup volume (0–1)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float dropVolume = 0.45 {"hint":"Drop volume (0–1)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float doneVolume = 0.5 {"hint":"Done-column settle volume (0–1)", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @ui {"widget":"group_end"}'

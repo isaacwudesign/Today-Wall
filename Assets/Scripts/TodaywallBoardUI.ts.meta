@@ -1,0 +1,89 @@
+- !<AssetImportMetadata/936d0079-ebfd-4283-add5-2fa09056f24c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f5034962-6d5c-4ff0-84a3-c083117003a2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f5034962-6d5c-4ff0-84a3-c083117003a2
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 129dcc94-03e4-42e3-8398-13986149b705
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/129dcc94-03e4-42e3-8398-13986149b705>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: d3b9a898-9db6-42aa-bd8a-058f989cd03e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    cardHeightCm: false
+    cardWidthCm: false
+    columnHeightCm: false
+    columnWidthCm: false
+    doingColumn: false
+    doneColumn: false
+    ghostOpacity: false
+    headerFromTopCm: false
+    headerToCardsCm: false
+    labelColor: false
+    pinnedOpacity: false
+    titleInk: false
+    todoColumn: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - todoColumn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doingColumn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doneColumn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      columnWidthCm: !<float> 20.000000
+      columnHeightCm: !<float> 42.000000
+      cardWidthCm: !<float> 21.000000
+      cardHeightCm: !<float> 9.000000
+      headerFromTopCm: 5.500000
+      headerToCardsCm: !<float> 8.000000
+      pinnedOpacity: 0.550000
+      ghostOpacity: 0.320000
+      labelColor: !<Vec4> {x: 0.920000, y: 0.940000, z: 0.970000, w: 1.000000}
+      titleInk: !<Vec4> {x: 0.120000, y: 0.120000, z: 0.140000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaywallBoardUI – glass columns</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject todoColumn {"hint":"To do column anchor"}'
+    - '// @input SceneObject doingColumn {"hint":"Doing column anchor"}'
+    - '// @input SceneObject doneColumn {"hint":"Done column anchor"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float columnWidthCm = 28 {"hint":"Column width in cm", "widget":"slider", "min":18, "max":36, "step":0.5}'
+    - '// @input float columnHeightCm = 56 {"hint":"Column height in cm", "widget":"slider", "min":32, "max":72, "step":1}'
+    - '// @input float cardWidthCm = 21 {"hint":"Task card width in cm — drag this in Inspector to resize cards", "widget":"slider", "min":10, "max":26, "step":0.5}'
+    - '// @input float cardHeightCm = 9 {"hint":"Task card height in cm", "widget":"slider", "min":5, "max":16, "step":0.5}'
+    - '// @input float headerFromTopCm = 5.5 {"hint":"Distance from the top of a column to the To do (3) header, cm", "widget":"slider", "min":3, "max":14, "step":0.5}'
+    - '// @input float headerToCardsCm = 10 {"hint":"Gap from that header down to the first card, cm — drag this to close the empty space", "widget":"slider", "min":4, "max":22, "step":0.5}'
+    - '// @input float pinnedOpacity = 0.55 {"hint":"Pinned frame opacity (see-through)", "widget":"slider", "min":0.2, "max":1, "step":0.05}'
+    - '// @input float ghostOpacity = 0.32 {"hint":"Ghost preview opacity", "widget":"slider", "min":0.1, "max":0.8, "step":0.05}'
+    - '// @input vec4 labelColor = "{0.92, 0.94, 0.97, 1}" {"hint":"Column label color", "widget":"color"}'
+    - '// @input vec4 titleInk = "{0.96, 0.97, 0.99, 1}" {"hint":"Card title color — Specs additive display, dark ink vanishes", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

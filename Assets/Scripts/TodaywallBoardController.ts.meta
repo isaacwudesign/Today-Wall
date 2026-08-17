@@ -1,0 +1,86 @@
+- !<AssetImportMetadata/90e23f7f-473a-454e-b2cf-fbef362ecb3f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 9b1208ea-a0b1-45a1-bca8-70b099e69380
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 9b1208ea-a0b1-45a1-bca8-70b099e69380
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 15f5a0c9-4ef9-41ab-b9f5-a474d4355785
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/15f5a0c9-4ef9-41ab-b9f5-a474d4355785>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: aef9e4a8-9b74-4cdd-84ee-f69c314f4cb6
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    addUI: false
+    audio: false
+    boardUI: false
+    cardSpacingCm: false
+    cardsRoot: false
+    doingColumn: false
+    doneColumn: false
+    dropPaddingCm: false
+    fallbackForwardCm: false
+    todoColumn: false
+    wallMaxUpDot: false
+    wallOffsetCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - todoColumn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doingColumn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doneColumn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cardsRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      boardUI: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      addUI: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      wallMaxUpDot: 0.350000
+      wallOffsetCm: !<float> 3.000000
+      fallbackForwardCm: !<float> 130.000000
+      dropPaddingCm: !<float> 8.000000
+      cardSpacingCm: !<float> 11.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaywallBoard – wall pin, grab, drop</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject todoColumn {"hint":"Empty To do column anchor"}'
+    - '// @input SceneObject doingColumn {"hint":"Empty Doing column anchor"}'
+    - '// @input SceneObject doneColumn {"hint":"Empty Done column anchor"}'
+    - '// @input SceneObject cardsRoot {"hint":"Parent for runtime task cards"}'
+    - '// @input AssignableType_1 boardUI {"hint":"See-through column UI"}'
+    - '// @input AssignableType_2 addUI {"hint":"Add-task UI module"}'
+    - '// @input AssignableType_3 audio {"hint":"Pickup/drop audio"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float wallMaxUpDot = 0.35 {"hint":"Max |normal·up| to accept a vertical wall (0 = wall, 1 = floor)", "widget":"slider", "min":0.1, "max":0.6, "step":0.05}'
+    - '// @input float wallOffsetCm = 3 {"hint":"Ghost / pin standoff from the wall, cm", "widget":"slider", "min":1, "max":12, "step":0.5}'
+    - '// @input float fallbackForwardCm = 130 {"hint":"Fallback wall distance in front of camera, cm", "widget":"slider", "min":60, "max":180, "step":5}'
+    - '// @input float dropPaddingCm = 8 {"hint":"Extra radius past a column when detecting a drop", "widget":"slider", "min":2, "max":16, "step":0.5}'
+    - '// @input float cardSpacingCm = 10 {"hint":"Vertical spacing between cards, cm", "widget":"slider", "min":10, "max":22, "step":0.5}'
+    - '// @ui {"widget":"group_end"}'

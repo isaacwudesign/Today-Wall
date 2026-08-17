@@ -1,0 +1,83 @@
+- !<AssetImportMetadata/28b5a78d-0b50-4324-b9b8-7d3bdee07e65>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c9385e4b-68ba-4f8b-87e2-2214c0ade282
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c9385e4b-68ba-4f8b-87e2-2214c0ade282
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> c0e9b71d-52f9-46dc-ac34-2305f83de549
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/c0e9b71d-52f9-46dc-ac34-2305f83de549>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 8d4d3d2d-dfd4-40a6-b36e-eedb5ee1d7ec
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    addUI: false
+    audio: false
+    cardSpacingCm: false
+    cardsRoot: false
+    doingSlot: false
+    doneSlot: false
+    dropPaddingCm: false
+    fallbackDownCm: false
+    fallbackForwardCm: false
+    queryTimeoutSec: false
+    todoSlot: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - todoSlot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doingSlot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      doneSlot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cardsRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      addUI: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      queryTimeoutSec: 2.500000
+      fallbackForwardCm: !<float> 80.000000
+      fallbackDownCm: !<float> 42.000000
+      dropPaddingCm: !<float> 6.000000
+      cardSpacingCm: 6.200000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaydeskBoard – trays, grab, desk place</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject todoSlot {"hint":"Empty slot for the To do tray"}'
+    - '// @input SceneObject doingSlot {"hint":"Empty slot for the Doing tray"}'
+    - '// @input SceneObject doneSlot {"hint":"Empty slot for the Done tray"}'
+    - '// @input SceneObject cardsRoot {"hint":"Parent for runtime task cards"}'
+    - '// @input AssignableType_1 addUI {"hint":"Add-task UI module"}'
+    - '// @input AssignableType_2 audio {"hint":"Pickup/drop audio"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float queryTimeoutSec = 2.5 {"hint":"Seconds to hunt for a desk surface before falling back", "widget":"slider", "min":0.5, "max":6, "step":0.5}'
+    - '// @input float fallbackForwardCm = 80 {"hint":"Fallback distance in front of the camera, cm", "widget":"slider", "min":40, "max":140, "step":5}'
+    - '// @input float fallbackDownCm = 42 {"hint":"Fallback drop below eye height, cm", "widget":"slider", "min":10, "max":80, "step":5}'
+    - '// @input float dropPaddingCm = 6 {"hint":"Extra radius past tray AABB when detecting a drop", "widget":"slider", "min":2, "max":16, "step":0.5}'
+    - '// @input float cardSpacingCm = 6.2 {"hint":"Side spacing between cards in a tray, cm", "widget":"slider", "min":4, "max":10, "step":0.2}'
+    - '// @ui {"widget":"group_end"}'

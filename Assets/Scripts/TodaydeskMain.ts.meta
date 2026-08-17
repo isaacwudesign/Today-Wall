@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/5ba8291c-061d-4f7e-835b-4f06c9d10495>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> b31cf38f-e160-4aca-b2c6-6d74ad3531cb
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> b31cf38f-e160-4aca-b2c6-6d74ad3531cb
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5a5ec573-dea7-4863-b6a3-8abecdbafe62
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5a5ec573-dea7-4863-b6a3-8abecdbafe62>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: ea5ae4e0-ed86-498f-8234-22d9c876fceb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    addUI: false
+    audio: false
+    board: false
+    debugColliders: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - board: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      addUI: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">TodaydeskMain – orchestrates planner</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 board {"hint":"Board controller (trays + cards)"}'
+    - '// @input AssignableType_2 addUI {"hint":"Add-task UI"}'
+    - '// @input AssignableType_3 audio {"hint":"Audio cues"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input bool debugColliders {"hint":"Draw collider wireframes for trays and cards"}'
+    - '// @ui {"widget":"group_end"}'
